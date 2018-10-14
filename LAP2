@@ -1,0 +1,36 @@
+Study:
+from youtube_dl import YoutubeDL
+
+#Sample 1,2: Download multiple youtube
+
+# d1 = YoutubeDL()
+# d1.download(["https://www.youtube.com/watch?v=V6pLnQdGA_c","https://www.youtube.com/watch?v=F5tS5m86bOI"])
+# print(type(d1))
+
+#Sample 3: Download audio
+# options = {
+#     "format" : "bestaudio/audio"
+
+# }
+# d1 = YoutubeDL(options)
+# d1.download(["https://www.youtube.com/watch?v=c3jHlYsnEe0"])
+
+#Sample 4: Search and download the first video
+# options= {
+#     "default_search": "ytsearch",
+#     "max_download": 1
+# }
+# d1 = YoutubeDL(options)
+# d1.download(["con dien TAMKA PKL"])
+
+#Sample 5: Search and then download the first audio:
+options = {
+    "default_search" : "ytsearch",
+    "max_download":1,
+    "format": "bestaudio/audio"
+}
+d1 = YoutubeDL()
+d1.download(["Nho mua sai goi lam truong"])
+
+
+
